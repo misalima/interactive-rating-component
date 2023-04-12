@@ -4,44 +4,27 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  
   <main>
-    <TheWelcome />
+    
+      <div class="star-div"><img src="./assets/icon-star.svg" alt="icon-star"></div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="inputs-div">
+        <input type="checkbox" name="1-star" id="">
+        <label for="1-star">1</label>
+        <input type="checkbox" name="2-star" id="">
+        <label for="1-star">2</label>
+        <input type="checkbox" name="3-star" id="">
+        <label for="1-star">3</label>
+        <input type="checkbox" name="4-star" id="">
+        <label for="1-star">4</label>
+        <input type="checkbox" name="5-star" id="">
+        <label for="1-star">5</label>
+      </div>
+      <button>SUBMIT</button>
+        
   </main>
+
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>

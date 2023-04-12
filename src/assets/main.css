@@ -1,24 +1,31 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;700&display=swap');
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+}
 
 #app {
-  max-width: 1280px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+#app>main {
+  padding: 2rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.star-div {
+  background-color: hsl(212, 17%, 22%);
+  width: fit-content;
+  padding: 12px;
+  border-radius: 100%;
+  display: flex;
+  
 }
 
 @media (min-width: 1024px) {
@@ -28,8 +35,7 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     padding: 0 2rem;
   }
 }
