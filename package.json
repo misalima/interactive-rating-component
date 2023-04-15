@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/production",
+    "build": "vite build --base=/interactive-rating-component",
     "preview": "vite preview"
   },
   "dependencies": {
