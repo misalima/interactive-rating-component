@@ -22,7 +22,9 @@ body {
   padding: 2rem;
   background-color: hsl(213, 19%, 18%);
   border-radius: 30px;
+
 }
+
 
 .star-div {
   background-color: hsl(212, 17%, 22%);
@@ -33,14 +35,46 @@ body {
   
 }
 
-main>h1 {
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+.thank-you img {
+  width: 9em;
+}
+
+.given-rating {
+  height: 30px;
+  line-height: 34px;
+  background-color: hsl(212, 17%, 22%);
+  width: fit-content;
+  padding: 0 20px;
+  border-radius: 20px;
+  color: hsl(25, 100%, 63%);
+}
+
+.thank-you h1 {
+  margin-top: 0;
+}
+
+.thank-you p {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+main h1 {
   font-size: 1.7em;
   color: white;
   margin-bottom: 0;
   margin-top: 1em;
 }
 
-main>p {
+main p {
   color: hsl(217, 12%, 63%);
   font-size: 0.9em;
   line-height: 1.5em;
@@ -103,6 +137,7 @@ button:hover, button:active {
   cursor: pointer;
 }
 
+
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -114,3 +149,4 @@ button:hover, button:active {
     padding: 0 2rem;
   }
 }
+
