@@ -9,19 +9,22 @@ body {
   min-height: 100vh;
   background-color: hsl(216, 12%, 8%);
   font-family: 'Overpass', sans-serif;
+  display: flex;
+  place-items: center;
+  overflow: hidden;
 }
 
 #app {
-  max-width: 450px;
+  max-width: 360px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.1rem;
   font-weight: normal;
 }
 
 #app>main {
-  padding: 2rem;
+  padding: 2rem 1.6rem;
   background-color: hsl(213, 19%, 18%);
-  border-radius: 30px;
+  border-radius: 20px;
 
 }
 
@@ -32,6 +35,7 @@ body {
   padding: 0.8em;
   border-radius: 100%;
   display: flex;
+  margin: -10px 0;
   
 }
 
@@ -81,9 +85,10 @@ main p {
 }
 
 .inputs-div {
-  margin: 30px 0;
+  margin: 25px 0;
   display: flex;
   justify-content:space-between;
+  gap: 10px;
   font-size: 1em;
   font-weight: 700;
   color: hsl(217, 12%, 63%);
@@ -92,12 +97,12 @@ main p {
 
 label {
   background-color: hsl(212, 17%, 22%);
-  width: 3em;
-  height: 3em;
+  width: 2.7em;
+  height: 2.7em;
   border-radius: 100%;
   margin: 0;
   text-align: center;
-  line-height: 3em;
+  line-height: 2.8em;
   transition: all 0.3s ease;
 }
 
@@ -145,8 +150,14 @@ button:hover, button:active {
   }
 
   #app {
-    
-    padding: 0 2rem;
+    max-width: 450px;
+    padding: 3rem;
+  }
+
+  label {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
   }
 }
 
